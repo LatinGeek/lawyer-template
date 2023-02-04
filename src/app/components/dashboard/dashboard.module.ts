@@ -13,6 +13,7 @@ import { SharedModule } from "../../shared/shared.module";
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DefaultComponent } from './default/default.component';
+import { HomeComponent } from './home/home.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { UniversityComponent } from './university/university.component';
 import { BitcoinComponent } from './bitcoin/bitcoin.component';
@@ -26,7 +27,8 @@ import { ProjectComponent } from './project/project.component';
     UniversityComponent, 
     BitcoinComponent, 
     ServerComponent, 
-    ProjectComponent
+    ProjectComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
