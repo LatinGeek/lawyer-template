@@ -21,7 +21,7 @@ export interface Menu {
 export class NavService {
 
 	public screenWidth: any
-	public collapseSidebar: boolean = false
+	public collapseSidebar: boolean = true
 	public fullScreen = false;
 
 	constructor() {

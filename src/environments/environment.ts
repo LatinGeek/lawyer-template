@@ -5,13 +5,22 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: "AIzaSyCJi0cQ866lzPR8hYJUs77JUmD4DBpswl8",
-    authDomain: "angular-deomo.firebaseapp.com",
-    databaseURL: "https://angular-deomo.firebaseio.com",
-    projectId: "angular-deomo",
-    storageBucket: "angular-deomo.appspot.com",
-    messagingSenderId: "175907956497"
+    apiKey: "AIzaSyAlQOjg8IGsbzeB17HidUboA2wnvzqYNPs",
+    authDomain: "lawyer-42d31.firebaseapp.com",
+    projectId: "lawyer-42d31",
+    storageBucket: "lawyer-42d31.appspot.com",
+    messagingSenderId: "941461580882",
   }
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyAlQOjg8IGsbzeB17HidUboA2wnvzqYNPs",
+  //   authDomain: "lawyer-42d31.firebaseapp.com",
+  //   projectId: "lawyer-42d31",
+  //   storageBucket: "lawyer-42d31.appspot.com",
+  //   messagingSenderId: "941461580882",
+  //   appId: "1:941461580882:web:67a22d5b4d6816fb90038b",
+  //   measurementId: "G-4YM6WY0YHP"
+  // };
+  
 };
 /*
  * For easier debugging in development mode, you can import the following file

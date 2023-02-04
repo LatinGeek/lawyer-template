@@ -1,18 +1,31 @@
-  <!-- Container-fluid starts-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xl-100 xl-100">
-        <div class="card">
-          <div class="card-body">
-            <owl-carousel-o [options]="owlcarousel13Options">
-                <ng-template carouselSlide class="item" [id]="img.id" *ngFor="let img of owlcarousel1">
-                  <img [src]="[img.img]" alt="">
-                </ng-template>
-            </owl-carousel-o>
-          </div>
-        </div>
-      </div>
+<!-- Container-fluid starts-->
+<div class="container-fluid" style="padding: 0;">
 
+
+  <hr>
+  <div class="row">
+    <div class="col-4" style="text-align: center;">
+      <img src="assets/images/logo/logo.png" style="max-height: 100px;" alt="">
+    </div>
+    <div class="col-8" style="align-self: center;">
+      <nav style="margin-right: 20px;" class="menu">
+        <ul class="menu">
+          <li class="menu"><a href="#">Home</a></li>
+          <li class="active menu"><a href="#">About</a></li>
+          <li><a class="menu" href="#">Portfolio</a></li>
+          <li><a class="menu" href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <!-- Container-fluid Ends-->
+  <hr>
+  <owl-carousel-o [options]="owlcarousel13Options" #homeOwl>
+    <ng-template style="width: 100%;" carouselSlide class="item" [id]="img.id" *ngFor="let img of owlcarousel1">
+      <img [src]="[img.img]" alt="">
+    </ng-template>
+  </owl-carousel-o>
+
+
+
+</div>
+<!-- Container-fluid Ends-->

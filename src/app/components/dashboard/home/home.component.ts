@@ -20,25 +20,21 @@ export class HomeComponent implements OnInit {
   }
 
   owlcarousel1 = [
-    { img: "assets/images/slider/lawfirm1.png" },
-    { img: "assets/images/slider/lawfirm2.png" },
-    { img: "assets/images/slider/lawfirm3.png" },
+    { img: "assets/images/slider/lawfirm1.png", id: "1"},
+    { img: "assets/images/slider/lawfirm2.png", id: "2" },
   ];
 
   //Options
   owlcarousel13Options = {
-    items: 5,
     loop: true,
-    margin: 10,
+    margin: 0,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
-    nav: false,
+    nav: false, 
+  
     responsive: {
-      576: {
-        items: 1,
-        mergeFit: true
-      },
+      0: { items: 1 }, 400: { items: 1 }, 740: { items: 1 }, 960: { items: 1 }
     }
   };
 

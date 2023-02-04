@@ -12,8 +12,9 @@
       <div class="right-sidebar" [class.show]="right_side_bar" id="right_side_bar">
         <app-right-sidebar></app-right-sidebar>
       </div>
-      <div class="page-body">
-        <app-breadcrumb></app-breadcrumb>
+      <div class="page-body" style="padding: 0;">
+        
+        <!-- <app-breadcrumb></app-breadcrumb> !-->
         <main [@animateRoute]="getRouterOutletState(o)">
           <router-outlet #o="outlet"></router-outlet>
         </main>
