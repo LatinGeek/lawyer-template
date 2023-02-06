@@ -18,7 +18,7 @@
   height: 20px;
   float: right;
   margin-right: 0px;
-  border-left: 1px solid #aaa;
+  border-left: 1px solid rgb(138, 138, 138);
   padding: 0 20px;
 }
 
@@ -41,7 +41,7 @@
 
 .menu li a {
   text-decoration: none;
-  color: #ccc;
+  color: rgb(156, 156, 156);
   font: 25px/1 Century, sans-serif;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
@@ -49,28 +49,28 @@
 
 .services li a {
     text-decoration: none;
-    color: #ccc;
+    color: rgb(180, 180, 180);
     font: 25px/1 Century, sans-serif;
     text-transform: uppercase;
     -webkit-transition: all 0.5s ease;
   }
 
 .menu li a:hover {
-  color: #666;
+  color: rgb(216, 216, 216);
 }
 
 .menu li.active a {
   font-weight: bold;
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 
 .services li a:hover {
-  color: #666;
+  color: rgb(226, 226, 226);
 }
 
 .services li.active a {
   font-weight: bold;
-  color: #333;
+  color: rgb(202, 202, 202);
 }
 
 .accordion-item{

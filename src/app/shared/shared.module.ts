@@ -15,6 +15,7 @@ import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.
 import { BookmarkComponent } from './components/bookmark/bookmark.component';
 import { PublicationComponent } from './components/publication/publication.component';
 import { DoubleSlideTextComponent } from './components/double-slide-text/double-slide-text.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 import { TranslateModule } from '@ngx-translate/core';
 import { CustomizerComponent } from './components/customizer/customizer.component';
@@ -50,7 +51,8 @@ import { NgbdSortableHeader } from './directives/NgbdSortableHeader';
     BreadcrumbComponent,
     CustomizerComponent,
     PublicationComponent,
-    DoubleSlideTextComponent
+    DoubleSlideTextComponent,
+    ContactFormComponent
   ],
   imports: [
     CommonModule,
@@ -67,7 +69,8 @@ import { NgbdSortableHeader } from './directives/NgbdSortableHeader';
     FeatherIconsComponent,
     TranslateModule,
     NgbdSortableHeader,
-    DoubleSlideTextComponent
+    DoubleSlideTextComponent,
+    ContactFormComponent
   ],
   providers: [
     NavService,
