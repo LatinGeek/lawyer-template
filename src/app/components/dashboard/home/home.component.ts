@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core';
 import * as chartData from './../../../shared/data/dashboard/default';
 declare var require: any
@@ -10,7 +11,18 @@ var secondary = localStorage.getItem('secondary_color') || '#4466f2';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  animations: [
+    trigger('fade', [
+      transition('void => active', [ // using status here for transition
+        style({ opacity: 0 }),
+        animate(1000, style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        animate(1000, style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
 export class HomeComponent implements OnInit {
 
@@ -39,6 +51,35 @@ export class HomeComponent implements OnInit {
 
     },
   ];
+
+  textBoxInfo = [
+    {
+      id: "li1",
+      title: "Inversiones",
+      description: `Asesoramos en fusiones y adquisiciones (M&A), intermediando en negocios de compraventa de acciones,
+      joint ventures y fusiones y escisiones empresariales, cubriendo las diferentes etapas jurídicas (auditorías y
+      procesos de due diligence, financiación, contratos involucrados, etc.).`
+  },
+  {
+    id: "li2",
+    title: "Legal",
+    description: `Prestamos servicios en todas las áreas del Derecho Laboral: relaciones individuales 
+    (relación empleador-trabajadores), relaciones colectivas (Derecho Sindical: relación empresa-sindicatos), 
+    seguridad y salud (gestión y prevención de la SYSO) y seguridad social (Derecho Tributario Previsional).`
+  },
+  {
+    id: "li3",
+    title: "Notarial",
+    description: `Brindamos servicios notariales para la adquisición, enajenación y administración de toda clase de bienes
+    muebles e inmuebles (compraventas, arrendamientos, leasings y otros).`
+  },
+  {
+    id: "li4",
+    title: "Startup",
+    description: `Asistimos a emprendedores y trabajamos con startups en los desafíos legales vinculados a las
+    primeras etapas del desarrollo de sus proyectos.`
+  },
+];
 
   //Options
   owlcarousel13Options = {
@@ -81,6 +122,14 @@ export class HomeComponent implements OnInit {
 
     let myTag2 = this.el.nativeElement.querySelector("#" + id);
     myTag2.classList.add('active');
+
+    let selectedItem = this.textBoxInfo.filter(item => item.id == id);
+
+    let myTag3 = this.el.nativeElement.querySelector("#textBoxInfo");
+    myTag3.innerHTML=selectedItem[0].description;
+
+    let myTag4 = this.el.nativeElement.querySelector("#textBoxTitle");
+    myTag4.innerHTML=selectedItem[0].title;
 
   }
 
