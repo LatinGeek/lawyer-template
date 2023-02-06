@@ -1,0 +1,19 @@
+<div class="card-body">
+  <ngb-accordion #acc="ngbAccordion">
+    <ngb-panel [id]="'toggle-1' + i "  *ngFor="let question of faq; let i = index">
+      <ng-template ngbPanelTitle>
+        <div >
+          <p style="font: 10px/1 Century, sans-serif;
+          font-size: 18px; font-weight: 300; margin-top: 10px;
+          color: #343b43; ">{{question.title}}</p></div>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p style="font: 10px/1 Century, sans-serif;
+        font-size: 18px; font-weight: 300; margin-top: 10px;
+        color: #343b43; opacity: 80%;">{{question.response}}</p>
+      </ng-template>
+    </ngb-panel>
+
+  </ngb-accordion>
+
+</div>

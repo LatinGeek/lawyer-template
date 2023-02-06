@@ -41,22 +41,22 @@ export class CustomizerService {
     this.createStyle(color)
     this.data.color.color = color
     if (color == "color-1") {
-      this.data.color.primary_color = '#4466f2';
+      this.data.color.primary_color = '#7e6c4e';
       this.data.color.secondary_color = '#1ea6ec';
     } else if (color == "color-2") {
-      this.data.color.primary_color = '#0288d1';
+      this.data.color.primary_color = '#7e6c4e';
       this.data.color.secondary_color = '#26c6da';
     } else if (color == "color-3") {
-      this.data.color.primary_color = '#8e24aa';
+      this.data.color.primary_color = '#7e6c4e';
       this.data.color.secondary_color = '#ff6e40';
     } else if (color == "color-4") {
-      this.data.color.primary_color = '#4c2fbf';
+      this.data.color.primary_color = '#7e6c4e';
       this.data.color.secondary_color = '#2e9de4';
     } else if (color == "color-5") {
-      this.data.color.primary_color = '#7c4dff';
+      this.data.color.primary_color = '#7e6c4e';
       this.data.color.secondary_color = '#7b1fa2';
     } else if (color == "color-6") {
-      this.data.color.primary_color = '#3949ab';
+      this.data.color.primary_color = '#7e6c4e';
       this.data.color.secondary_color = '#4fc3f7';
     }
     localStorage.setItem('color', this.data.color.color);

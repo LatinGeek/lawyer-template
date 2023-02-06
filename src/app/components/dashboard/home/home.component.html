@@ -17,14 +17,119 @@
         </ul>
       </nav>
     </div>
+    <hr>
   </div>
-  <hr>
+
+
+  <!-- Carousel section -->
+
   <owl-carousel-o [options]="owlcarousel13Options" #homeOwl>
     <ng-template style="width: 100%;" carouselSlide class="item" [id]="img.id" *ngFor="let img of owlcarousel1">
       <img [src]="[img.img]" alt="">
     </ng-template>
   </owl-carousel-o>
 
+  <!-- Page Body -->
+  <div style="margin: 0,20px;">
+
+
+    <!-- Services -->
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <h1
+            style="font: 45px/1 Century, sans-serif; margin-left: 40px; margin-top: 50px; margin-bottom: 25px; font-weight: 200;">
+            Servicios
+          </h1>
+        </div>
+
+        <div class="row" style="margin-bottom: 40px">
+          <!-- Selection Column -->
+          <div class="col-4" style="text-align: right; padding: 50px;">
+            <nav style="padding-right: 20px;" class="services">
+              <ul class="serviceInfoMenu services">
+                <li id="li1" class="serviceInfo services"><a class="services" (click)="setServiceInfo('li1')">Legal</a></li>
+                <li id="li2" class="serviceInfo services"><a class="services" (click)="setServiceInfo('li2')" >Notarial</a></li>
+                <li id="li3" class="serviceInfo active services"><a class="services" (click)="setServiceInfo('li3')">Inversiones</a></li>
+                <li id="li4" class="serviceInfo services"><a class="services" (click)="setServiceInfo('li4')">Startup</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- End Selection Column -->
+          <!-- Description Column -->
+          <div class="col-8" style="border-left:5px; border-color:#7e6c4e;background-color:#c8c6b0;border-left: solid;
+          border-width: thick; padding: 40px; display: table;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <p style="font: 35px/1 Century, sans-serif;
+            font-size: 21px;
+            color: #343b43;"> Inversiones </p>
+              <p style="font: 10px/1 Century, sans-serif;
+            font-size: 18px;
+            color: #343b43; opacity: 70%;">
+                Asesoramos en fusiones y adquisiciones (M&A), intermediando en negocios de compraventa de acciones,
+                joint
+                ventures y fusiones y escisiones empresariales, cubriendo las diferentes etapas jurídicas (auditorías y
+                procesos de due diligence, financiación, contratos involucrados, etc.).
+              </p>
+            </div>
+          </div>
+          <!-- End Description Column -->
+        </div>
+      </div>
+      <!-- End Services -->
+    </div>
+  </div>
+  <!-- End Page Body -->
+
+  <!-- Recommendations Column -->
+  <div class="row" style="background-color:#c8c6b0;
+                padding: 40px;">
+    <div style="">
+      <div class="row">
+        <img src="assets/images/other-images/quotes.png" style="    width: 200px;
+        height: 200px;
+        position: absolute;
+        opacity: 35%;
+        top: -16px;
+        mix-blend-mode: overlay;" alt="">
+
+        <h1 style="font: 45px/1 Century, sans-serif; margin-top: 50px; font-weight: 200; color: white;">
+          Reconocimientos
+        </h1>
+
+        <owl-carousel-o [options]="owlcarousel135Options" #homeOwl2>
+          <ng-template carouselSlide class="item" [id]="img2.id" *ngFor="let img2 of owlcarousel2">
+
+            <div style=" padding: 80px">
+              <div style="font-weight: bold; font-size: 18px;
+                  color: #343b43; opacity: 70%">
+                {{img2.description}}
+              </div>
+              <div style="font: 10px/1 Century, 400;
+            font-size: 14px; margin-top: 10px;
+            color: #43474b; opacity: 70%;">
+                {{img2.author}}
+              </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+  <!-- End Recommendations Column -->
+
+  <div class="row">
+    <h1
+      style="font: 45px/1 Century, sans-serif; margin-left: 40px; margin-top: 50px; margin-bottom: 25px; font-weight: 200;">
+      Preguntas Frecuentes
+    </h1>
+  </div>
+
+
+  <div style="padding-top:25px;padding-left:40px;padding-right: 40px; margin-bottom: 200px;">
+    <app-publication></app-publication>
+  </div>
 
 
 </div>

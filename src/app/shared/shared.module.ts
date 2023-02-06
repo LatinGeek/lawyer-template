@@ -13,6 +13,7 @@ import { FeatherIconsComponent } from './components/feather-icons/feather-icons.
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.component';
 import { BookmarkComponent } from './components/bookmark/bookmark.component';
+import { PublicationComponent } from './components/publication/publication.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CustomizerComponent } from './components/customizer/customizer.component';
 import { DragulaModule } from 'ng2-dragula';
@@ -45,7 +46,8 @@ import { NgbdSortableHeader } from './directives/NgbdSortableHeader';
     ToggleFullscreenDirective,
     NgbdSortableHeader,
     BreadcrumbComponent,
-    CustomizerComponent
+    CustomizerComponent,
+    PublicationComponent
   ],
   imports: [
     CommonModule,
@@ -58,6 +60,7 @@ import { NgbdSortableHeader } from './directives/NgbdSortableHeader';
   ],
   exports: [
     LoaderComponent,
+    PublicationComponent,
     FeatherIconsComponent,
     TranslateModule,
     NgbdSortableHeader

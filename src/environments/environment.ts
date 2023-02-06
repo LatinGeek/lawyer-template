@@ -10,6 +10,8 @@ export const environment = {
     projectId: "lawyer-42d31",
     storageBucket: "lawyer-42d31.appspot.com",
     messagingSenderId: "941461580882",
+    appId: "1:941461580882:web:67a22d5b4d6816fb90038b",
+    measurementId: "G-4YM6WY0YHP"
   }
   // const firebaseConfig = {
   //   apiKey: "AIzaSyAlQOjg8IGsbzeB17HidUboA2wnvzqYNPs",
