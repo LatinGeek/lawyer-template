@@ -1,6 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core';
-import * as chartData from './../../../shared/data/dashboard/default';
+import * as chartData from './../../../../shared/data/dashboard/default';
 declare var require: any
 var Knob = require('knob')// browserify require
 

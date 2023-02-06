@@ -10,10 +10,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 // import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SharedModule } from "../../shared/shared.module";
+import { LandingModule } from "./landing/landing.module";
+
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DefaultComponent } from './default/default.component';
-import { HomeComponent } from './home/home.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { UniversityComponent } from './university/university.component';
 import { BitcoinComponent } from './bitcoin/bitcoin.component';
@@ -29,7 +30,6 @@ import { DoubleSlideTextComponent } from 'src/app/shared/components/double-slide
         BitcoinComponent,
         ServerComponent,
         ProjectComponent,
-        HomeComponent,
     ],
     imports: [
         CommonModule,
@@ -43,6 +43,7 @@ import { DoubleSlideTextComponent } from 'src/app/shared/components/double-slide
         NgxChartsModule,
         Ng2GoogleChartsModule,
         SharedModule,
+        LandingModule
     ]
 })
 export class DashboardModule { }

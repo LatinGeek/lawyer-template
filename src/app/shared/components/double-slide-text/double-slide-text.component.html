@@ -15,7 +15,7 @@
 <!-- Description Column -->
 <div class="col-8" style="border-left:5px; border-color:#7e6c4e;background-color:#59686f3a;border-left: solid;
 border-width: thick; padding: 40px; display: table;">
-  <div style="display: table-cell; vertical-align: middle;">
+  <div [@simpleFadeAnimation]=transition (@simpleFadeAnimation.done)="handleDone($event)" style="display: table-cell; vertical-align: middle;">
     <p id='textBoxTitle' style="font: 35px/1 Century, sans-serif;
   font-size: 21px; padding-bottom:20px;
   color: #ffffff;"> Inversiones </p>
