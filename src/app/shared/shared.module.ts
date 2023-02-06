@@ -14,6 +14,8 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { RightSidebarComponent } from './components/right-sidebar/right-sidebar.component';
 import { BookmarkComponent } from './components/bookmark/bookmark.component';
 import { PublicationComponent } from './components/publication/publication.component';
+import { DoubleSlideTextComponent } from './components/double-slide-text/double-slide-text.component';
+
 import { TranslateModule } from '@ngx-translate/core';
 import { CustomizerComponent } from './components/customizer/customizer.component';
 import { DragulaModule } from 'ng2-dragula';
@@ -47,7 +49,8 @@ import { NgbdSortableHeader } from './directives/NgbdSortableHeader';
     NgbdSortableHeader,
     BreadcrumbComponent,
     CustomizerComponent,
-    PublicationComponent
+    PublicationComponent,
+    DoubleSlideTextComponent
   ],
   imports: [
     CommonModule,
@@ -63,7 +66,8 @@ import { NgbdSortableHeader } from './directives/NgbdSortableHeader';
     PublicationComponent,
     FeatherIconsComponent,
     TranslateModule,
-    NgbdSortableHeader
+    NgbdSortableHeader,
+    DoubleSlideTextComponent
   ],
   providers: [
     NavService,

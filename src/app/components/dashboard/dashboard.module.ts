@@ -19,30 +19,30 @@ import { UniversityComponent } from './university/university.component';
 import { BitcoinComponent } from './bitcoin/bitcoin.component';
 import { ServerComponent } from './server/server.component';
 import { ProjectComponent } from './project/project.component';
+import { DoubleSlideTextComponent } from 'src/app/shared/components/double-slide-text/double-slide-text.component';
 
 @NgModule({
-  declarations: [
-    DefaultComponent, 
-    ECommerceComponent, 
-    UniversityComponent, 
-    BitcoinComponent, 
-    ServerComponent, 
-    ProjectComponent,
-    HomeComponent
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    CarouselModule,
-    NgbModule,
-    ChartistModule,
-    NgChartsModule,
-    CountToModule,
-    DashboardRoutingModule,
-    NgxChartsModule,
-    Ng2GoogleChartsModule,
-    SharedModule,
-    // NgxDatatableModule
-  ]
+    declarations: [
+        DefaultComponent,
+        ECommerceComponent,
+        UniversityComponent,
+        BitcoinComponent,
+        ServerComponent,
+        ProjectComponent,
+        HomeComponent,
+    ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        CarouselModule,
+        NgbModule,
+        ChartistModule,
+        NgChartsModule,
+        CountToModule,
+        DashboardRoutingModule,
+        NgxChartsModule,
+        Ng2GoogleChartsModule,
+        SharedModule,
+    ]
 })
 export class DashboardModule { }
