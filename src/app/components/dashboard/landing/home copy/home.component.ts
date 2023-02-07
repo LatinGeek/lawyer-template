@@ -1,6 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
 import * as chartData from './../../../../shared/data/dashboard/default';
 declare var require: any
 var Knob = require('knob')// browserify require
@@ -9,9 +8,9 @@ var primary = localStorage.getItem('primary_color') || '#4466f2';
 var secondary = localStorage.getItem('secondary_color') || '#4466f2';
 
 @Component({
-  selector: 'app-landing-layour',
-  templateUrl: './landing-layout.component.html',
-  styleUrls: ['./landing-layout.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
   encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('fade', [
@@ -25,17 +24,12 @@ var secondary = localStorage.getItem('secondary_color') || '#4466f2';
     ])
   ]
 })
-export class LandingLayoutComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
-  constructor(private el: ElementRef, private router: Router) { 
-
-  }
+  constructor(private el: ElementRef) { }
 
   ngOnInit() {
-    console.log(this.router.url.split("/").slice(-1)[0])
   }
-
-  selectedTabId = this.router.url.split("/").slice(-1)[0];
 
   owlcarousel1 = [
     { img: "assets/images/slider/lawfirm1.png", id: "1" },
@@ -94,16 +88,5 @@ export class LandingLayoutComponent implements OnInit {
   public chart5 = chartData.chartCalculation;
 
 
-  setServiceInfo(id) {
-    //this.transition = 'out';
-
-    let myTag = this.el.nativeElement.getElementsByClassName(`menu`);
-    for (const box of myTag) {
-      box.classList.remove('active');
-    }
-
-    this.selectedTabId = id;
-
-  }
 
 }

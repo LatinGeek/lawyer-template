@@ -10,26 +10,17 @@
     <div class="col-8" style="align-self: center;">
       <nav style="margin-right: 20px;" class="menu">
         <ul class="menu">
-          <li class="menu active"><a href="#">Home</a></li>
-          <li class="menu"><a href="#">About</a></li>
-          <li><a class="menu" href="#">Portfolio</a></li>
-          <li><a class="menu" href="#">Contact</a></li>
+          <li #home class="menu" [ngClass]="selectedTabId == 'home' ? 'active' : ''" (click)="setServiceInfo('home')"><a routerLink="/dashboard/home">Home</a></li>
+          <li #about class="menu" [ngClass]="selectedTabId == 'about' ? 'active' : ''" (click)="setServiceInfo('about')"><a href="#">About</a></li>
+          <li #portfolio class="menu" [ngClass]="selectedTabId == 'portfolio' ? 'active' : ''" (click)="setServiceInfo('portfolio')" ><a class="menu" routerLink="/dashboard/portfolio">Portfolio</a></li>
+          <li #contact class="menu" [ngClass]="selectedTabId == 'contact' ? 'active' : ''" (click)="setServiceInfo('contact')"><a class="menu" href="#">Contact</a></li>
         </ul>
       </nav>
     </div>
   </div>
 
-  <div style="margin: 5px"></div>
 
-WADOAWDOWAKD
-kawd
-AWDKOOKW
-DKAWDK
-AWKD
-AWKDKAWO
-DK
-AWKDAWKDAWKDKAW
-DK
+
   <router-outlet></router-outlet>
 
  

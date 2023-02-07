@@ -13,11 +13,13 @@ import { LandingRoutingModule } from "./landing-routing.module";
 // import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SharedModule } from "../../../shared/shared.module";
 import { HomeComponent } from './home/home.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LandingLayoutComponent } from './landing-layout/landing-layout.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
+        PortfolioComponent,
         LandingLayoutComponent
     ],
     imports: [
