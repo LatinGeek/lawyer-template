@@ -19,6 +19,9 @@ import { UserCardsComponent } from './user-cards/user-cards.component';
     UsersRoutingModule,
     CountToModule,
     GalleryModule
+  ],
+  exports: [
+    UserCardsComponent
   ]
 })
 export class UsersModule { }

@@ -15,12 +15,17 @@ import { SharedModule } from "../../../shared/shared.module";
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LandingLayoutComponent } from './landing-layout/landing-layout.component';
+import { ContactComponent } from './contact/contact.component';
+import { UsersModule } from '../../users/users.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
         PortfolioComponent,
-        LandingLayoutComponent
+        ContactComponent,
+        LandingLayoutComponent,
+        AboutComponent
     ],
     imports: [
         CommonModule,
@@ -33,7 +38,8 @@ import { LandingLayoutComponent } from './landing-layout/landing-layout.componen
         NgxChartsModule,
         Ng2GoogleChartsModule,
         SharedModule,
-        LandingRoutingModule
+        LandingRoutingModule,
+        UsersModule
     ],
     exports: [
         LandingLayoutComponent

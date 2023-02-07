@@ -11,9 +11,9 @@
       <nav style="margin-right: 20px;" class="menu">
         <ul class="menu">
           <li #home class="menu" [ngClass]="selectedTabId == 'home' ? 'active' : ''" (click)="setServiceInfo('home')"><a routerLink="/dashboard/home">Home</a></li>
-          <li #about class="menu" [ngClass]="selectedTabId == 'about' ? 'active' : ''" (click)="setServiceInfo('about')"><a href="#">About</a></li>
+          <li #about class="menu" [ngClass]="selectedTabId == 'about' ? 'active' : ''" (click)="setServiceInfo('about')"><a routerLink="/dashboard/about">About</a></li>
           <li #portfolio class="menu" [ngClass]="selectedTabId == 'portfolio' ? 'active' : ''" (click)="setServiceInfo('portfolio')" ><a class="menu" routerLink="/dashboard/portfolio">Portfolio</a></li>
-          <li #contact class="menu" [ngClass]="selectedTabId == 'contact' ? 'active' : ''" (click)="setServiceInfo('contact')"><a class="menu" href="#">Contact</a></li>
+          <li #contact class="menu" [ngClass]="selectedTabId == 'contact' ? 'active' : ''" (click)="setServiceInfo('contact')"><a class="menu" routerLink="/dashboard/contact">Contact</a></li>
         </ul>
       </nav>
     </div>

@@ -1411,11 +1411,11 @@ agm-map {
 /*======= Badge-color css end  ======= */
 /*======= Background-color css starts  ======= */
 .bg-primary {
-  background-color: #DEDEDE !important;
+  background-color: #434343 !important;
   color: #fff; }
 
 .bg-secondary {
-  background-color: #4fc3f7 !important;
+  background-color: #59686f3a !important;
   color: #fff; }
 
 .bg-success {
