@@ -13,10 +13,12 @@ import { LandingRoutingModule } from "./landing-routing.module";
 // import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { SharedModule } from "../../../shared/shared.module";
 import { HomeComponent } from './home/home.component';
+import { LandingLayoutComponent } from './landing-layout/landing-layout.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
+        LandingLayoutComponent
     ],
     imports: [
         CommonModule,
@@ -30,6 +32,9 @@ import { HomeComponent } from './home/home.component';
         Ng2GoogleChartsModule,
         SharedModule,
         LandingRoutingModule
+    ],
+    exports: [
+        LandingLayoutComponent
     ]
 })
 export class LandingModule { }
