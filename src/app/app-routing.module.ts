@@ -20,13 +20,13 @@ const routes: Routes = [
   {
     path: '',
     component: ContentLayoutComponent,
-    canActivate: [AdminGuard],
+    canActivate: [],
     children: content
   },
   {
     path: '',
     component: FullLayoutComponent,
-    canActivate: [AdminGuard],
+    canActivate: [],
     children: full
   },
   {
