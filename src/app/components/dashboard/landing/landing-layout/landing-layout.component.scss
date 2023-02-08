@@ -36,9 +36,13 @@
   }
 
 .menu li:last-child {
-  border-left: none;
+  @media only screen and (max-width: 1000px){
+    border-left: 1px solid #aaa !important;
+  }
+  @media only screen and (min-width: 1000px){
+    border-left: none;
+  }
 }
-
 .menu li a {
   text-decoration: none;
   color: rgb(156, 156, 156);
@@ -75,4 +79,17 @@
 
 .accordion-item{
   border:none;
+}
+
+.flexibleMenu {
+  @media only screen and (max-width: 1000px){
+    display: grid;
+    height: 15em;
+  }
+}
+
+.flexibleHeader{
+  @media only screen and (max-width: 1000px){
+    display: block;
+  }
 }

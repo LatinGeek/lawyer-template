@@ -3,13 +3,13 @@
 
 
   <hr>
-  <div class="row">
+  <div class="row flexibleHeader">
     <div class="col-4" style="text-align: center;">
       <img src="assets/images/logo/logo.png" style="max-height: 100px;" alt="">
     </div>
     <div class="col-8" style="align-self: center;">
       <nav style="margin-right: 20px;" class="menu">
-        <ul class="menu">
+        <ul class="menu flexibleMenu">
           <li #home class="menu" [ngClass]="selectedTabId == 'home' ? 'active' : ''" (click)="setServiceInfo('home')"><a routerLink="/dashboard/home">Home</a></li>
           <li #about class="menu" [ngClass]="selectedTabId == 'about' ? 'active' : ''" (click)="setServiceInfo('about')"><a routerLink="/dashboard/about">About</a></li>
           <li #portfolio class="menu" [ngClass]="selectedTabId == 'portfolio' ? 'active' : ''" (click)="setServiceInfo('portfolio')" ><a class="menu" routerLink="/dashboard/portfolio">Portfolio</a></li>
