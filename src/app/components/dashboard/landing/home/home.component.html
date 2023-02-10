@@ -6,7 +6,7 @@
   <!-- Carousel section -->
 
   <owl-carousel-o [options]="owlcarousel13Options" #homeOwl>
-    <ng-template style="width: 100%;" carouselSlide class="item" [id]="img.id" *ngFor="let img of owlcarousel1">
+    <ng-template style="width: 100%;" carouselSlide class="item" [id]="img.id" *ngFor="let img of getOwlCarousel()">
       <img [src]="[img.img]" alt="">
     </ng-template>
   </owl-carousel-o>
@@ -53,7 +53,7 @@
         </h1>
 
         <owl-carousel-o [options]="owlcarousel135Options" #homeOwl2>
-          <ng-template carouselSlide class="item" [id]="img2.id" *ngFor="let img2 of owlcarousel2">
+          <ng-template carouselSlide class="item" [id]="img2.id" *ngFor="let img2 of carouselRecommendations">
 
             <div style=" padding: 50px">
               <div style="font-weight: 300; font-size: 18px;

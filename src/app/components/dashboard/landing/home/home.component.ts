@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef, HostListener } from '@angular/core';
 import * as chartData from './../../../../shared/data/dashboard/default';
 declare var require: any
 var Knob = require('knob')// browserify require
@@ -29,14 +29,15 @@ export class HomeComponent implements OnInit {
   constructor(private el: ElementRef) { }
 
   ngOnInit() {
+    this.onResize(null);
   }
 
-  owlcarousel1 = [
+  carouselLandscape = [
     { img: "assets/images/slider/lawfirm1.png", id: "1" },
     { img: "assets/images/slider/lawfirm2.png", id: "2" },
   ];
 
-  owlcarousel2 = [
+  carouselRecommendations = [
     {
       img: "assets/images/slider/lawfirm2.png",
       id: "a3",
@@ -51,6 +52,12 @@ export class HomeComponent implements OnInit {
 
     },
   ];
+
+  carouselPortrait = [
+    { img: "assets/images/slider/lawfirm1_square.png", id: "3" },
+    { img: "assets/images/slider/lawfirm2_square.png", id: "4" },
+  ];
+
 
   
 
@@ -87,6 +94,24 @@ export class HomeComponent implements OnInit {
   public chart4 = chartData.chartProduction;
   public chart5 = chartData.chartCalculation;
 
+  windowWidth: number;
+  windowHeight: number;
+  landscapeDisplay: boolean;
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.windowWidth = event.target.innerWidth;
+    this.windowHeight = event.target.innerHeight;
+
+    if (this.windowWidth <= 1000) {
+      this.landscapeDisplay = false;
+    }else{
+      this.landscapeDisplay = true;
+    }
+  }
+
+  getOwlCarousel(){
+    return this.landscapeDisplay ? this.carouselLandscape : this.carouselPortrait;
+  }
 
 }
