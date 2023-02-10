@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit {
     this.windowWidth = event.target.innerWidth;
     this.windowHeight = event.target.innerHeight;
 
-    if (this.windowWidth <= 1000) {
+    if (this.windowWidth <= 1080) {
       this.landscapeDisplay = false;
     }else{
       this.landscapeDisplay = true;
