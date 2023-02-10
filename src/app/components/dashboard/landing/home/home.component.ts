@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit, ViewEncapsulation, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef, HostListener, HostBinding } from '@angular/core';
 import * as chartData from './../../../../shared/data/dashboard/default';
 declare var require: any
 var Knob = require('knob')// browserify require
@@ -28,8 +28,15 @@ export class HomeComponent implements OnInit {
 
   constructor(private el: ElementRef) { }
 
+  @HostBinding('window.innerWidth') innerWidth: number;
+
   ngOnInit() {
-    this.onResize(null);
+  }
+
+  ngAfterViewInit() {
+    this.innerWidth = window.innerWidth;
+    this.onResize({ target: { innerWidth: this.innerWidth } });
+
   }
 
   carouselLandscape = [
@@ -108,6 +115,8 @@ export class HomeComponent implements OnInit {
     }else{
       this.landscapeDisplay = true;
     }
+
+    console.log(this.landscapeDisplay);
   }
 
   getOwlCarousel(){
