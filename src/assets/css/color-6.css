@@ -107,6 +107,10 @@ body {
   font-family: work-Sans, sans-serif;
   color: #1E272B; }
 
+.sectionTitle {
+    flex: auto;
+}
+
 ul {
   padding-left: 0px;
   list-style-type: none;

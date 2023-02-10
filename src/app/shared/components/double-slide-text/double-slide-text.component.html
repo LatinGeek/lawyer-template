@@ -1,6 +1,6 @@
  <div class="row">
  <!-- Selection Column -->
- <div class="col-4" style="text-align: right; padding: 50px;">
+ <div class="col-4 servicesOptions" style="text-align: right; align-self: center;">
   <nav style="padding-right: 20px;" class="services">
     <ul class="serviceInfoMenu services">
       <li id="li1" class="serviceInfo services active"><a class="services" style="cursor:pointer" (click)="setServiceInfo('li1')">Inversiones</a></li>
@@ -13,14 +13,13 @@
 
 <!-- End Selection Column -->
 <!-- Description Column -->
-<div class="col-8" style="border-left:5px; border-color:#7e6c4e;background-color:#59686f3a;border-left: solid;
-border-width: thick; padding: 40px; display: table;">
+<div class="col-8 servicesOptions" style="border-left:5px; border-color:#7e6c4e;background-color:#59686f3a;border-left: solid;
+border-width: thick; padding: 2em; display: table;">
   <div [@simpleFadeAnimation]=transition (@simpleFadeAnimation.done)="handleDone($event)" style="display: table-cell; vertical-align: middle;">
     <p id='textBoxTitle' style="font: 35px/1 Century, sans-serif;
   font-size: 21px; padding-bottom:20px;
   color: #ffffff;"> Inversiones </p>
-    <p id="textBoxInfo" style="font: 10px/1 Century, sans-serif;
-  font-size: 18px;
+    <p id="textBoxInfo" style="
   color: #ffffff; opacity: 70%;">
       Asesoramos en fusiones y adquisiciones (M&A), intermediando en negocios de compraventa de acciones,
       joint

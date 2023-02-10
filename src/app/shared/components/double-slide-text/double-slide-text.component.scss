@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0;}
+
 
 .menu nav {
   margin-right: 20px !important;
@@ -19,7 +19,6 @@
   float: right;
   margin-right: 0px;
   border-left: 1px solid #aaa;
-  padding: 0 20px;
 }
 
 .services li {
@@ -42,7 +41,6 @@
 .menu li a {
   text-decoration: none;
   color: #ccc;
-  font: 25px/1 Century, sans-serif;
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
 }
@@ -50,7 +48,6 @@
 .services li a {
     text-decoration: none;
     color: #ccc;
-    font: 25px/1 Century, sans-serif;
     text-transform: uppercase;
     -webkit-transition: all 0.5s ease;
   }
@@ -75,4 +72,26 @@
 
 .accordion-item{
   border:none;
+}
+
+.services {
+  @media screen and (max-width: 1000px) {
+    font-size: 13px;
+  }
+}
+
+#textBoxInfo {
+  @media screen and (max-width: 1000px) {
+    font-size: 13px;
+  }
+
+.servicesOptions{
+  @media screen and (max-width: 1000px) {
+    padding: 1em;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 2em;
+  }
+}
 }
