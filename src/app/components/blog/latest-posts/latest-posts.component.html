@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row" style="padding:3em; align-content: center;">
+    <div class="col-md-6 col-xl-3 set-col-6 " *ngFor="let post of posts">
+      <div class="card bg-secondary">
+        <div class="blog-box blog-grid text-center">
+          <img style="height: 200px; object-fit:cover"
+            class="img-fluid top-radius-blog"
+            [src]="post.bannerUrl"
+            alt=""
+          />
+          <div class="blog-details-main">
+            <ul class="blog-social">
+              <li class="digits">{{post.date | date}}</li>
+              <li class="digits">by: {{post.author}}</li>
+              <li class="digits">{{post.clicks}} Hits</li>
+            </ul>
+            <hr />
+            <h6 class="blog-bottom-details">
+              {{post.title}}
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

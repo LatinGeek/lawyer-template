@@ -43,7 +43,7 @@ import { DoubleSlideTextComponent } from 'src/app/shared/components/double-slide
         NgxChartsModule,
         Ng2GoogleChartsModule,
         SharedModule,
-        LandingModule
+        LandingModule,
     ]
 })
 export class DashboardModule { }

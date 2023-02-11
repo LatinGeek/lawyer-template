@@ -18,6 +18,8 @@ import { LandingLayoutComponent } from './landing-layout/landing-layout.componen
 import { ContactComponent } from './contact/contact.component';
 import { UsersModule } from '../../users/users.module';
 import { AboutComponent } from './about/about.component';
+import { BlogModule } from '../../blog/blog.module';
+import { LatestPostsComponent } from '../../blog/latest-posts/latest-posts.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +27,7 @@ import { AboutComponent } from './about/about.component';
         PortfolioComponent,
         ContactComponent,
         LandingLayoutComponent,
-        AboutComponent
+        AboutComponent,
     ],
     imports: [
         CommonModule,
@@ -39,10 +41,11 @@ import { AboutComponent } from './about/about.component';
         Ng2GoogleChartsModule,
         SharedModule,
         LandingRoutingModule,
-        UsersModule
+        UsersModule,
+        BlogModule
     ],
     exports: [
-        LandingLayoutComponent
+        LandingLayoutComponent,
     ]
 })
 export class LandingModule { }

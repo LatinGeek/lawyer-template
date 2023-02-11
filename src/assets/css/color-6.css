@@ -109,6 +109,9 @@ body {
 
 .sectionTitle {
     flex: auto;
+    font-weight: 300;
+    text-align: center;
+    
 }
 
 ul {

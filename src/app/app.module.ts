@@ -21,6 +21,7 @@ import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { LatestPostsComponent } from './components/blog/latest-posts/latest-posts.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
