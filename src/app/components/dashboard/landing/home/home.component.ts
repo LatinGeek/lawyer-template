@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
 
   posts: Post[] = [
     {
-      title: "The Importance of Estate Planning",
+      title: "La importancia del Estate Planning",
       author: "John Smith",
       description: "Estate planning is a critical aspect of financial planning that everyone should consider. In this post, we'll explore why estate planning is so important and what steps you can take to ensure your assets are managed properly after your death.",
       date: 1609459200,
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
       bannerUrl: "/assets/images/latest-posts/latest-posts-1.jpeg"
     },
     {
-      title: "What is a Power of Attorney?",
+      title: "Cuál es el poder de un Abogado?",
       author: "Mary Garcia",
       description: "A power of attorney is a legal document that gives another person the authority to make decisions on your behalf. In this post, we'll explore what a power of attorney is, why it's important, and what you should know.",
       date: 1609545680,
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit {
       bannerUrl: "assets/images/latest-posts/latest-posts-2.jpeg"
     },
     {
-      title: "The Basics of Contract Law",
+      title: "Los básicos de Contract Law",
       author: "David Brown",
       description: "Contract law is a complex and important area of law that governs the formation and enforcement of contracts. In this post, we'll explore the basics of contract law and what you need to know to protect your rights and interests.",
       date: 1609632000,
@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit {
       bannerUrl: "assets/images/latest-posts/latest-posts-3.webp"
     },
     {
-      title: "Understanding Civil Litigation",
+      title: "Entendiendo la Litigación Civil",
       author: "Jane Doe",
       description: "Civil litigation is the process of resolving disputes through the court system. In this post, we'll explore what civil litigation is, why it's important, and what you should know if you find yourself involved in a civil lawsuit.",
       date: 1609718400,
