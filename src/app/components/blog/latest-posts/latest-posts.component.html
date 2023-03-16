@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row" style="padding:3em; align-content: center;">
-    <div class="col-md-6 col-xl-3 set-col-6 " *ngFor="let post of posts">
-      <div class="card bg-secondary">
+    <div class="col-md-6 col-xl-3 set-col-6 " *ngFor="let post of posts" routerLink="/blog/single">
+      <div class="card bg-secondary" routerLink="/dashboard/blogs">
         <div class="blog-box blog-grid text-center">
           <img style="height: 200px; object-fit:cover"
             class="img-fluid top-radius-blog"

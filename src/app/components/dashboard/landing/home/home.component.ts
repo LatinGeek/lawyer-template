@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit {
       date: 1609459200,
       clicks: 500,
       id: "1",
-      bannerUrl: "/assets/images/latest-posts/latest-posts-1.jpeg"
+      bannerUrl: "/assets/images/blog/blog-single.png"
     },
     {
       title: "Cuál es el poder de un Abogado?",

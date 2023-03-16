@@ -45,10 +45,8 @@ export class DoubleSlideTextComponent implements OnInit {
   textBoxInfo = [
     {
       id: "li1",
-      title: "Inversiones",
-      description: `Asesoramos en fusiones y adquisiciones (M&A), intermediando en negocios de compraventa de acciones,
-      joint ventures y fusiones y escisiones empresariales, cubriendo las diferentes etapas jurídicas (auditorías y
-      procesos de due diligence, financiación, contratos involucrados, etc.).`
+      title: "Emprendedurismo",
+      description: `Asesoramos a todas las personas en las formas legales de emprender. Intermediando en diversas operaciones.`
   },
   {
     id: "li2",
@@ -65,9 +63,13 @@ export class DoubleSlideTextComponent implements OnInit {
   },
   {
     id: "li4",
-    title: "Startup",
-    description: `Asistimos a emprendedores y trabajamos con startups en los desafíos legales vinculados a las
-    primeras etapas del desarrollo de sus proyectos.`
+    title: "Contable",
+    description: `Nos encargamos de preparar y presentar declaraciones de impuestos, asesorar sobre temas fiscales y financieros, realizar auditorías contables y elaborar estados financieros. Con nuestra ayuda, nuestros clientes pueden tomar decisiones informadas sobre sus finanzas, cumplir con las regulaciones fiscales y financieras, y estar preparados para cualquier posible acción legal.`
+  },
+  {
+    id: "li5",
+    title: "Cooperativismo",
+    description: `Brindamos asesoría y apoyo legal a cooperativas en todas las etapas de su desarrollo, desde la constitución y registro legal, hasta la gestión y operación cotidiana. Nos enfocamos en proporcionar soluciones personalizadas para nuestros clientes, con el objetivo de ayudarles a maximizar su eficiencia y rentabilidad.`
   },
 ];
 
