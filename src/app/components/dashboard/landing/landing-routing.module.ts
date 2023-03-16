@@ -6,6 +6,7 @@ import { LandingLayoutComponent } from './landing-layout/landing-layout.componen
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { BlogSingleComponent } from '../../blog/blog-single/blog-single.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,9 @@ const routes: Routes = [
           {path: 'home', component: HomeComponent},
           {path: 'portfolio', component: PortfolioComponent},
           {path: 'contact', component: ContactComponent},
-          {path: 'about', component: AboutComponent}
+          {path: 'about', component: AboutComponent},
+          {path: 'blogs', component: BlogSingleComponent},
+
         ]
   },
 
